@@ -42,7 +42,7 @@ header p {
     object-fit: cover;
     border-radius: 50%;
     display: block;
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;  /* centers the image */
 }
 
 /* || Card Styling */
