@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Jastin Alberca | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
     <header>
         <h1>Jastin Alberca</h1>
-        <p>IT Student | Web Systems and Technologies</p>
+        <p style="text-align:center;">IT Student | Web Systems and Technologies</p>
     </header>
 
-    <main>
+    <main class="container">
 
-        <section>
+        <section class="card">
             <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="Profile photo" width="150" height="150">
+            <img src="images/profile.jpg" alt="Profile photo" width="150">
             <p>
                 I'm a second year BSIT student from the University of Science and Technology of Southern Philippines.
             </p>
         </section>
 
-        <section>
+        <section class="card">
             <h2>Contact Information</h2>
             <p>
                 Email:
@@ -38,72 +39,52 @@
             </p>
         </section>
 
-        <section>
-    <h2>Education</h2>
-    <table> 
-        <style>
-    table {
-        border-collapse: collapse;
-        width: 30%;
-    }
+        <section class="card">
+            <h2>Education</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Program</th>
+                        <th>Institution</th>
+                        <th>Year Graduated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Elementary</td>
+                        <td>Bonbon Elementary</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td>Junior High School</td>
+                        <td>KNHS</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>Senior High School</td>
+                        <td>KNHS</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>College (BSIT)</td>
+                        <td>USTP – CDO Campus</td>
+                        <td>2028</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    table, th, td {
-        border: 1px solid black;
-    }
-
-    th, td {
-        padding: 8px;
-        text-align: center;
-    }
-</style>
-            <tr>
-                <th>Program</th>
-                <th>Institution</th>
-                <th>Year Graduated</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Elementary</td>
-                <td>Bonbon Elementary</td>
-                <td align="center">2017</td>
-            </tr>
-            <tr>
-                <td>Junior High School</td>
-                <td>KNHS</td>
-                <td align="center">2021</td>
-            </tr>
-            <tr>
-                <td>Senior High School</td>
-                <td>KNHS</td>
-                <td align="center">2023</td>
-            </tr>
-            <tr>
-                <td>College (BSIT)</td>
-                <td>USTP – CDO Campus</td>
-                <td align="center">2028</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
-        <section>
+        <section class="card">
             <h2>Contact Me</h2>
             <form>
-                <input type="text" placeholder="Name">
-                <br><br>
-
-                <input type="email" placeholder="Email">
-                <br><br>
-
-                <textarea placeholder="Message"></textarea>
-                <br><br>
-
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" rows="4"></textarea>
                 <button type="submit">Send</button>
             </form>
         </section>
 
-        <section>
+        <section class="card">
             <h2>Skills</h2>
             <ul>
                 <li>HTML</li>
@@ -112,7 +93,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="card">
             <h2>Web Development</h2>
             <ul>
                 <li>
@@ -130,7 +111,8 @@
     </main>
 
     <footer>
-        <p>© 2026 Jastin Alberca. All rights reserved.</p>
+        <p style="text-align:center;">© 2026 Jastin Alberca. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
