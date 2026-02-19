@@ -10,7 +10,7 @@ body {
     line-height: 1.6;
     padding: 30px 20px;
     color: #333;
-    transition: 0.3s;
+    transition: background 0.4s ease, color 0.4s ease;
 }
 
 .container {
@@ -39,6 +39,7 @@ header p {
     margin-bottom: 25px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: background 0.4s ease;
 }
 
 .card img {
@@ -75,7 +76,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -96,7 +96,6 @@ tr:nth-child(even) {
     background-color: #f1f5f9;
 }
 
-/* Form */
 form {
     display: flex;
     flex-direction: column;
@@ -118,33 +117,38 @@ button {
     cursor: pointer;
 }
 
-/* Dark Mode */
-.dark-mode {
-    background-color: #121212;
+/* DARK MODE */
+body.dark-mode {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
     color: white;
 }
 
-.dark-mode .card {
-    background-color: #1e1e1e;
+body.dark-mode .card {
+    background: #1e1e1e;
 }
 
-.dark-mode table {
-    color: white;
+body.dark-mode header h1 {
+    color: #60a5fa;
 }
 
-.dark-mode th {
-    color: white;
+body.dark-mode h2 {
+    color: #60a5fa;
+    border-left: 5px solid #60a5fa;
 }
 
-.dark-mode td {
-    color: white;
+body.dark-mode h3 {
+    color: #93c5fd;
 }
 
-.dark-mode tr:nth-child(even) {
+body.dark-mode a {
+    color: #60a5fa;
+}
+
+body.dark-mode tr:nth-child(even) {
     background-color: #2a2a2a;
 }
 
-.dark-mode tr:nth-child(odd) {
+body.dark-mode tr:nth-child(odd) {
     background-color: #1e1e1e;
 }
 
