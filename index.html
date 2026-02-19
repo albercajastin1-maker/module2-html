@@ -2,111 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jastin Alberca | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Jastin Alberca</h1>
-        <p>IT Student | Web Systems and Technologies</p>
-    </header>
+<header>
+    <button id="themeToggle">Toggle Dark Mode</button>
+    <h1>Jastin Alberca</h1>
+    <p>IT Student | Web Systems and Technologies</p>
+</header>
 
-    <main class="container">
+<main class="container">
 
-        <section class="card">
-    <h2>About Me</h2>
-   <img src="./images/Profile.jpg" alt="Profile photo">
-    <p>
-        I'm a second year BSIT student from the University of Science and Technology of Southern Philippines.
-    </p>
-</section>
-        <section class="card">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-            <ul>
-                 <li>Web Development</li>
+    <!-- About Me (WITH Contact Info Inside) -->
+    <section class="card">
+        <h2>About Me</h2>
+
+        <img src="./images/Profile.jpg" alt="Profile photo">
+
+        <p>
+            I'm a second year BSIT student from the University of Science and Technology of Southern Philippines.
+        </p>
+        <p>Email:
+            <a href="mailto:Jastinalberca77@gmail.com">
+                Jastinalberca77@gmail.com
+            </a>
+        </p>
+        <p>GitHub:
+            <a href="https://github.com/" target="_blank">
+                github.com
+            </a>
+        </p>
+    </section>
+
+    <!-- Toggle Skills -->
+    <button id="toggleSkills">Show/Hide Skills</button>
+
+    <!-- Skills -->
+    <section class="card" id="skillsSection">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Web Development
                 <ul>
                     <li>Frontend</li>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-            </ul>
-        </section>
+                </ul>
+            </li>
+        </ul>
+    </section>
 
-        <section class="card">
-            <h2>Contact Information</h2>
-            <p>
-                Email:
-                <a href="mailto:Jastinalberca77@gmail.com">
-                    Jastinalberca77@gmail.com
-                </a>
-            </p>
-            <p>
-                GitHub:
-                <a href="https://github.com" target="_blank">
-                    github.com
-                </a>
-            </p>
-        </section>
+    <!-- Education -->
+    <section class="card">
+        <h2>Education</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Program</th>
+                    <th>Institution</th>
+                    <th>Year Graduated</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Elementary</td>
+                    <td>Bonbon Elementary</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Junior High School</td>
+                    <td>KNHS</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>Senior High School</td>
+                    <td>KNHS</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>College (BSIT)</td>
+                    <td>USTP – CDO Campus</td>
+                    <td>2028</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-        <section class="card">
-            <h2>Education</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Program</th>
-                        <th>Institution</th>
-                        <th>Year Graduated</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Elementary</td>
-                        <td>Bonbon Elementary</td>
-                        <td>2017</td>
-                    </tr>
-                    <tr>
-                        <td>Junior High School</td>
-                        <td>KNHS</td>
-                        <td>2021</td>
-                    </tr>
-                    <tr>
-                        <td>Senior High School</td>
-                        <td>KNHS</td>
-                        <td>2023</td>
-                    </tr>
-                    <tr>
-                        <td>College (BSIT)</td>
-                        <td>USTP – CDO Campus</td>
-                        <td>2028</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    <!-- Contact Form -->
+    <section class="card">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-        <section class="card">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" rows="4"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
+</main>
 
-    </main>
+<footer>
+    <p>© 2026 Jastin Alberca. All rights reserved.</p>
+</footer>
 
-    <footer>
-        <p>© 2026 Jastin Alberca. All rights reserved.</p>
-    </footer>
-    <script src="js/script.js"> 
-    <button type="submit" id="submitBtn">Send</button>
+<script src="js/script.js"></script>
 </body>
 </html>
