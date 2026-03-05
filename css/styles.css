@@ -43,11 +43,28 @@ header p {
 }
 
 .card img {
+    display: block;
+    margin: 0 auto; /* centers horizontally */
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
+}
+
+/* Center profile photo inside card */
+.profile-photo {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  margin-bottom: 15px;
+}
+
+.profile-photo img {
+  width: 150px;          /* size of the photo */
+  height: 150px;
+  border-radius: 50%;    /* makes it circular */
+  object-fit: cover;     /* crops properly */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* optional: subtle shadow */
 }
 
 h2 {
@@ -123,12 +140,12 @@ button:hover {
 }
 
 /* DARK MODE */
-body.dark-mode {
+.dark-mode {
     background: linear-gradient(135deg, #0f172a, #1e293b);
     color: white;
 }
 
-body.dark-mode .card {
+.dark-mode .card {
     background: #1e1e1e;
 }
 
@@ -168,4 +185,26 @@ body.dark-mode button {
 footer {
     text-align: center;
     margin-top: 30px;
+}
+.card {
+  background-color: #f4f4f9;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* src/styles.css */
+.card h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card li {
+  padding: 5px 0;
 }

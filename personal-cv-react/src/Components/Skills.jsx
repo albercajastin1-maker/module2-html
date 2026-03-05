@@ -1,22 +1,23 @@
-import { useState } from "react";
-function Skills() {
-const [visible, setVisible] = useState(true);
-return (
-<section>
-<button onClick={() => setVisible(!visible)}>
-Show/Hide Skills
-</button>
-{visible && (
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<ul>
-<li>Frontend</li>
-</ul>
-</ul>
-)}
-</section>
-);
+import React, { useState } from 'react';
+import Card from './Card';
+
+function Skills({ skills }) {
+  const [visible, setVisible] = useState(true);
+
+  return (
+    <Card title="Skills">
+      <button onClick={() => setVisible(!visible)}>
+        Show/Hide Skills
+      </button>
+      {visible && (
+        <ul>
+          {skills.map((skill, index) => (
+            <li key={index}>{skill}</li>
+          ))}
+        </ul>
+      )}
+    </Card>
+  );
 }
+
 export default Skills;

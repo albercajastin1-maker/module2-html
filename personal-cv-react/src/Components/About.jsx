@@ -1,10 +1,10 @@
+import React from "react";
+import Card from "./Card";
 import profile from "../assets/Profile.jpg";
 
 function About() {
   return (
-    <section className="card">
-      <h2>About Me</h2>
-
+    <Card title="About Me">
       <div className="profile-photo">
         <img src={profile} alt="Profile photo" />
       </div>
@@ -27,7 +27,7 @@ function About() {
           github.com
         </a>
       </p>
-    </section>
+    </Card>
   );
 }
 

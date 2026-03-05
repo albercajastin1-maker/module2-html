@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Components/Header";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
@@ -16,9 +16,32 @@ function App() {
     }
   }, [darkMode]);
 
+  const education = [
+    {
+      program: "Elementary",
+      school: "Bonbon Elementary",
+      year: "2017"
+    },
+    {
+      program: "Junior High School",
+      school: "KNHS",
+      year: "2021"
+    },
+    {
+      program: "Senior High School",
+      school: "KNHS",
+      year: "2023"
+    },
+    {
+      program: "College (BSIT)",
+      school: "USTP – CDO Campus",
+      year: "2028"
+    }
+  ];
+
   return (
     <>
-      <button 
+      <button
         onClick={() => setDarkMode(!darkMode)}
         style={{ margin: "20px", padding: "10px 15px", cursor: "pointer" }}
       >
@@ -27,8 +50,9 @@ function App() {
 
       <Header />
       <About />
-      <Skills />
-      <Education />
+      <Skills skills={["HTML", "CSS", "JavaScript", "React"]} />
+      {}
+      <Education education={education} />
       <Contact />
     </>
   );
