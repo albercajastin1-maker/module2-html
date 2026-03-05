@@ -6,6 +6,7 @@ import Education from "./Components/Education";
 import Contact from "./Components/Contact";
 
 function App() {
+
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -51,7 +52,6 @@ function App() {
       <Header />
       <About />
       <Skills skills={["HTML", "CSS", "JavaScript", "React"]} />
-      {}
       <Education education={education} />
       <Contact />
     </>
